@@ -10,8 +10,7 @@
 </head>
 
 <body>
-  <!-- Background layers -->
-  <div class="bg" aria-hidden="true">
+  <div class="bg">
     <div class="bg__carbon"></div>
     <div class="bg__glow bg__glow--left"></div>
     <div class="bg__glow bg__glow--right"></div>
@@ -21,7 +20,7 @@
   <main class="wrap">
     <!-- HERO -->
     <header class="hero">
-      <!-- Your car banner image -->
+      <!-- REPLACED: SVG car silhouette → YOUR IMAGE -->
       <div class="hero__car" aria-hidden="true">
         <img class="heroCarImg" src="assets/car-banner.png" alt="" />
       </div>
@@ -34,7 +33,7 @@
 
     <!-- PACKAGES -->
     <section class="grid">
-      <!-- EXTERIOR PRECISION WASH -->
+      <!-- LEFT -->
       <article class="card card--left">
         <div class="card__frame"></div>
 
@@ -56,7 +55,7 @@
         <div class="card__time">Approx. 60-90 Minutes</div>
       </article>
 
-      <!-- INTERIOR RESET DETAIL -->
+      <!-- MIDDLE -->
       <article class="card card--mid">
         <div class="card__frame"></div>
 
@@ -77,7 +76,7 @@
         <div class="card__time">Approx. 75-105 Minutes</div>
       </article>
 
-      <!-- FULL DETAIL -->
+      <!-- RIGHT -->
       <article class="card card--right">
         <div class="card__frame"></div>
 
@@ -107,14 +106,15 @@
       </div>
     </section>
 
-    <!-- CTA + NOTE + QR (QR CENTERED) -->
+    <!-- CTA + NOTE + QR -->
     <section class="lower">
       <div class="lower__cta">BOOK BOTH &amp; SAVE!</div>
       <div class="lower__note">Coupes &amp; Sedans&nbsp;&nbsp;•&nbsp;&nbsp;Larger Vehicles Priced on Inspection</div>
 
+      <!-- MOVED: QR is now CENTERED -->
       <div class="qrWrap">
         <div class="qrBox">
-          <canvas id="qrCanvas" width="240" height="240" aria-label="QR code"></canvas>
+          <canvas id="qrCanvas" width="240" height="240"></canvas>
           <div class="qrLabel">SCAN TO BOOK</div>
         </div>
       </div>

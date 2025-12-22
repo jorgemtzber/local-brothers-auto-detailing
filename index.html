@@ -10,7 +10,8 @@
 </head>
 
 <body>
-  <div class="bg">
+  <!-- Background layers -->
+  <div class="bg" aria-hidden="true">
     <div class="bg__carbon"></div>
     <div class="bg__glow bg__glow--left"></div>
     <div class="bg__glow bg__glow--right"></div>
@@ -20,7 +21,7 @@
   <main class="wrap">
     <!-- HERO -->
     <header class="hero">
-      <!-- REPLACED: SVG car silhouette → YOUR IMAGE -->
+      <!-- YOUR CAR BANNER (replace with your file at /assets/car-banner.png) -->
       <div class="hero__car" aria-hidden="true">
         <img class="heroCarImg" src="assets/car-banner.png" alt="" />
       </div>
@@ -33,7 +34,7 @@
 
     <!-- PACKAGES -->
     <section class="grid">
-      <!-- LEFT -->
+      <!-- EXTERIOR PRECISION WASH -->
       <article class="card card--left">
         <div class="card__frame"></div>
 
@@ -55,7 +56,7 @@
         <div class="card__time">Approx. 60-90 Minutes</div>
       </article>
 
-      <!-- MIDDLE -->
+      <!-- INTERIOR RESET DETAIL -->
       <article class="card card--mid">
         <div class="card__frame"></div>
 
@@ -72,56 +73,3 @@
         </ul>
 
         <div class="card__photo card__photo--vac" aria-hidden="true"></div>
-
-        <div class="card__time">Approx. 75-105 Minutes</div>
-      </article>
-
-      <!-- RIGHT -->
-      <article class="card card--right">
-        <div class="card__frame"></div>
-
-        <div class="card__head">
-          <div class="card__titleTop">FULL DETAIL—</div>
-          <div class="card__titleBottom">EXTERIOR + INTERIOR</div>
-        </div>
-
-        <div class="card__price">$95</div>
-
-        <ul class="card__list">
-          <li>Complete Inside &amp; Out</li>
-          <li>Best Value Package</li>
-          <li>2-3 Hours Total</li>
-        </ul>
-
-        <div class="card__photo card__photo--full" aria-hidden="true"></div>
-
-        <div class="card__time">Approx. 75-105 Minutes</div>
-      </article>
-    </section>
-
-    <!-- BOTTOM STRIP -->
-    <section class="bottomStrip">
-      <div class="bottomStrip__line">
-        Exterior Precision Wash&nbsp;&nbsp;|&nbsp;&nbsp;Interior Reset Detail&nbsp;&nbsp;|&nbsp;&nbsp;Full Detail Package
-      </div>
-    </section>
-
-    <!-- CTA + NOTE + QR -->
-    <section class="lower">
-      <div class="lower__cta">BOOK BOTH &amp; SAVE!</div>
-      <div class="lower__note">Coupes &amp; Sedans&nbsp;&nbsp;•&nbsp;&nbsp;Larger Vehicles Priced on Inspection</div>
-
-      <!-- MOVED: QR is now CENTERED -->
-      <div class="qrWrap">
-        <div class="qrBox">
-          <canvas id="qrCanvas" width="240" height="240"></canvas>
-          <div class="qrLabel">SCAN TO BOOK</div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.3/build/qrcode.min.js"></script>
-  <script src="script.js"></script>
-</body>
-</html>

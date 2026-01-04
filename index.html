@@ -63,7 +63,6 @@
         letter-spacing: -0.01em;
       }
 
-      /* ✅ Navbar logo uses transparent background, shows PNG as-is */
       .brand-badge {
         width: 40px;
         height: 40px;
@@ -80,7 +79,7 @@
       .brand-badge img {
         width: 100%;
         height: 100%;
-        object-fit: contain;
+        object-fit: cover;
         display: block;
       }
 
@@ -200,7 +199,7 @@
         border-radius: 999px;
       }
 
-      /* ✅ Big logo on right – transparent background, raw PNG */
+      /* BIG LOGO ON RIGHT – using logo.jpg */
       .hero-logo-large {
         width: 220px;
         height: 220px;
@@ -212,13 +211,13 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        overflow: hidden;
       }
       .hero-logo-large img {
         width: 100%;
         height: 100%;
-        object-fit: contain;
+        object-fit: cover;
         display: block;
-        border-radius: 999px;
       }
 
       /* SECTIONS */
@@ -365,7 +364,7 @@
         <div class="nav-inner">
           <a class="brand" href="#top">
             <div class="brand-badge">
-              <img src="assets/logo.png" alt="Local Brother's Auto Detailing logo" />
+              <img src="assets/logo.jpg" alt="Local Brother's Auto Detailing logo" />
             </div>
             <span>Local Brother's Auto Detailing</span>
           </a>
@@ -411,7 +410,7 @@
 
             <!-- Big logo on the right -->
             <div class="hero-logo-large">
-              <img src="assets/logo.png" alt="Local Brother's Auto Detailing logo" />
+              <img src="assets/logo.jpg" alt="Local Brother's Auto Detailing logo" />
             </div>
           </div>
         </div>
